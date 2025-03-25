@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,100..900&display=swap');
+
+body {
+    font-family: "Libre Franklin", sans-serif;
+    background: #f8f6f3;
+}
+
+h1 {
+    font-family: "Libre Baskerville", serif;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Libre Baskerville", serif;
+    text-indent: 100px;
+}
+
+h3 {
+    font-family: "Libre Baskerville", serif;
+    text-align: center;
+}
+
+.container {
+    margin: 150px auto;
+    width: 50%;
+    padding: 8px;
+}
+
+.pics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+a img {
+    transform: none !important;
+    transition: none !important;
+}
+
+a:hover {
+    background-color: #3D1C4E;
+    color: #fff;
+}
+
+a:hover img {
+    transform: none !important;
+    transition: none !important;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow: hidden;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #49225B;
+    font-size: 10px;
+    font-weight: 400;
+    min-width: 80px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+}
+
+.header {
+    padding: 5px;
+    text-align: center;
+    background: #49225B;
+    font-size: 30px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+video {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.audio-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.poster {
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    h2 {
+        text-indent: 20px;
+        text-align: center;
+    }
+    video {
+        width: 90%;
+    }
+    .poster {
+        width: 120px;
+    }
+}
+
+.paragraphContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: transparent; /* Remove background if not needed */
+    margin: 0 12%;
+    gap: 20px; /* Space between containers */
+}
+
+.paragraphContainer > div {
+    flex: 1; /* Equal width for each container */
+    border: 2px solid #49225B;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contentBlock .item {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contentBlock {
+    background: white;
+    border: 2px solid #49225B;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 20%; /* Ensures three blocks fit in one row */
+    min-width: 280px; /* Prevents shrinking too much */
+    display: flex;
+    flex-direction: column; /* Ensures the image is on top */
+    align-items: center; /* Centers content */
+}
+
+.contentBlock img {
+    width: 100%;
+    max-width: 250px; /* Adjust size */
+    border-radius: 10px;
+    margin-bottom: 10px; /* Space between image and text */
+}
